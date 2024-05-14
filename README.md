@@ -63,6 +63,8 @@ if (flock(fd, LOCK_SH) == -1) {
 }else
 {printf("Acquiring shared lock using flock");
 }
+```
+```
 getchar();
 // non-atomically upgrade to exclusive lock
 // do it in non-blocking mode, i.e. fail if can't upgrade immediately
